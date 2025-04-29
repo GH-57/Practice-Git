@@ -42,40 +42,39 @@
 # print(not(c or d))
 
 
-a = int(input())
+# a = int(input())
 
-if a<0:
-    if a%2==0 :
-        print("A")
+# if a<0:
+#     if a%2==0 :
+#         print("A")
 
-    else:
-        print('B')
-else:    
-    if a%2==0 :
-        print("C")
+#     else:
+#         print('B')
+# else:    
+#     if a%2==0 :
+#         print("C")
 
-    else:
-        print("D") 
-# 
-
-
-
-n=int(input())
-
-if n<0:
-  if n>=:
-    print('A')
-  else:
-    print('B')
-else:
-  if n%2==0:
-    print('C')
-  else:
-    print('D')
+#     else:
+#         print("D") 
+# # 
 
 
 
+# n=int(input())
+
+# if n<0:
+#   if n>=:
+#     print('A')
+#   else:
+#     print('B')
+# else:
+#   if n%2==0:
+#     print('C')
+#   else:
+#     print('D')
 
 
 
+A,B = input().split()	 
 
+print(int(A)+int(B))
