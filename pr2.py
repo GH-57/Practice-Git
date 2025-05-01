@@ -82,3 +82,21 @@
 # A,B = input().split()	 
 
 # print(int(A)-int(B)
+
+# a = input()
+# print(a + "??!")
+
+# 불기-서기=543
+
+# a = int(input())
+# print(a-543)
+
+# A,B,C = input().split()
+# A = int(A)
+# B = int(B)
+# C = int(C)
+
+# print((A+B)%C)
+# print(((A%C)+(B%C))%C)
+# print((A*B)%C)
+# print(((A%C)*(B%C))%C)
