@@ -406,29 +406,28 @@ else:
     print("안전하지 않은 비밀번호입니다.")
 '''
 
-#문제 42
-def 단어뒤집기(문장):
-  """
-  입력받은 문장의 각 단어를 뒤집어 출력하는 함수입니다.
+# 문제 42(??????)
+'''
+### (잘못된 풀이)
+words = input() # 입력받은 문장
 
-  Args:
-    문장: 뒤집을 문장 (string)
+for _ in range(1): # 한 문장동안 반복?
+    revers = [] #뒤집은 문자 모아둘 리스트 
 
-  Returns:
-    뒤집힌 단어를 포함한 문장 (string)
-  """
+for word in words: # 입력받은 문장을 단어로 분리
+    revers.append(words[::-1]) # 뒤집은 단어들 추가
 
-  단어_리스트 = 문장.split()  # 문장을 단어 단위로 분리
-  뒤집힌_단어_리스트 = []
+a = " ".join(revers)
+print(a)
 
-  for 단어 in 단어_리스트:
-    뒤집힌_단어 = 단어[::-1]  # 단어 뒤집기
-    뒤집힌_단어_리스트.append(뒤집힌_단어)
+### (구글링한 풀이)
+n = 1
 
-  뒤집힌_문장 = " ".join(뒤집힌_단어_리스트)  # 뒤집힌 단어들을 다시 문장으로 합치기
-  return 뒤집힌_문장
+for i in range(n):
+    s = list(input().split())
+    for j in s:
+        print(j[::-1], end=" ")
+    print()
+'''
 
-# 테스트
-문장 = "Hello world this is python"
-뒤집힌_문장 = 단어뒤집기(문장)
-print(뒤집힌_문장)  # 출력: olleH dlrow siht si nohtyp
+# 문제 43
