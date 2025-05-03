@@ -101,3 +101,21 @@
 # print((A*B)%C)
 # print(((A%C)*(B%C))%C)
 
+# a = int(input()) #1
+# b = input() #2
+
+# print(a*int(b[2]))  #3
+# print(a*int(b[1]))  #4
+# print(a*int(b[0]))  #5
+# print(a*int(b)) #6
+
+# print("\\    /\\")
+# print(" )  ( ')")
+# print("(  /  )")
+# print(" \\(__)|")
+
+# print("|\\_/|")
+# print("|q p|   /}")
+# print('( 0 )"""\\')
+# print('|"^"`    |')
+# print("||_/=\\\\__|")
