@@ -430,4 +430,124 @@ for i in range(n):
     print()
 '''
 
-# 문제 43
+# 문제 43(????)
+'''
+word = list(map(str, input()))
+
+vowels = ["a", "e", "i", "o", "u"]
+count = 0
+
+for letter in word:
+    if letter in vowels:
+        count += 1
+        
+print(f"모음 개수: {count}")
+print(f"자음 개수: {len(word)-count-1}")
+'''
+
+# 문제 44 (O)
+## round 함수는 round(값, 소수점 자리)
+'''
+a = float(input())
+
+print(f"가장 가까운 정수: {round(a)}")
+'''
+
+# 문제 45(????)
+'''
+a = input().split("-")
+
+yyyy = a[0] #년
+mm = a[1] #월
+dd = a[2] #일
+if yyyy % 4 == 0 and yyyy%100 !=0 or yyyy%400 == 0: #윤년 일 때 
+    if (mm == 4,6,9,11 and 1<=dd<=30) and (mm == 2 and 1<=dd<=29): 
+        print(f"유효한 날짜입니다.")
+elif yyyy % 4 == 0 and yyyy%100 !=0 or yyyy%400 == 0: #윤년 일 때
+    if (mm == 1,3,5,7,8,10,12 and 1<=dd<=31):
+        print(f"유효한 날짜입니다.")
+else: 
+    print("유효하지 않은 날짜 입니다.")
+'''    
+
+# 문제 46(O)
+'''
+a = input().split(".")
+
+print(f"확장자: {a[1]}")
+'''
+
+# 문제 47 (?????)
+## (정답은 알아도 설명할 수 있나?)
+'''
+def compress_string(s):
+    compressed = []
+    count = 1
+    for i in range(1, len(s)):
+        if s[i] == s[i-1]:
+            count += 1
+        else:
+            compressed.append(s[i-1] + str(count))
+            count = 1
+    compressed.append(s[-1] + str(count)) # 마지막 문자 붙이기
+    return ''.join(compressed)
+
+print(compress_string(input()))  
+'''
+
+# 문제 48(O)
+'''
+a = input()
+
+if a == a[::-1]:
+    print(f"'{a}'은(는) 팰린드롬입니다.")
+else:
+    print(f"'{a}'은(는) 팰린드롬이 아닙니다.")
+'''
+
+# 문제 49(????)
+#####(와 이건 진짜 모르겠다)
+'''
+a = list(input())
+b = []
+a[0] = H
+'''
+
+
+# 문제50
+################### 일부 구글링한 것
+'''
+a = input().split(".") # ip를 입력받아 .으로 분리
+b = list(map(int,a)) #ip를 int로 형변환(구글링)
+## a[0] a[1] a[2] a[3]
+c = b[0] 
+d = b[1] 
+e = b[2] 
+f = b[3]
+
+
+if (0<=c<=255 and 0<=d<=255 and 0<=e<=255 and 0<=f<=255) and len(a) == 4:
+    print(f"유효한 IP 주소입니다.")
+else:
+    print(f"유효하지 않은 IP주소입니다.")
+'''
+
+################### 내 풀이
+'''
+a = input().split(".") # ip를 입력받아 .으로 분리
+## a[0] a[1] a[2] a[3]
+c = a[0] 
+d = a[1] 
+e = a[2] 
+f = a[3]
+
+g = int(c)
+h = int(d)
+i = int(e)
+j = int(f)
+
+if (0<=g<=255 and 0<=h<=255 and 0<=i<=255 and 0<=j<=255) and len(a) == 4:
+    print(f"유효한 IP 주소입니다.")
+else:
+    print(f"유효하지 않은 IP주소입니다.")
+'''
