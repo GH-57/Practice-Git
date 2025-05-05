@@ -132,16 +132,51 @@
 # else:
 #     print('4')
 
-H,M = map(int,input().split())
+# H,M = map(int,input().split())
 
-if M <45: #분 단위가 45분보다 작을 때
-    if H==0: # 0시 이면
-        H = 23
-        M += 60
-    else: # 0시가 아니면
-        H -=1
-        M +=60
+# if M <45: #분 단위가 45분보다 작을 때
+#     if H==0: # 0시 이면
+#         H = 23
+#         M += 60
+#     else: # 0시가 아니면
+#         H -=1
+#         M +=60
 
-print(H,M-45)
+# print(H,M-45)
+
+# h, m = map(int, input().split()) # 시, 분 입력
+# t = int(input()) # 필요한 분 입력
+
+# h += t // 60  # 시는 60으로 나눈 몫
+# m += t % 60 # 분은 60으로 나눈 나머지
+
+# if m >= 60:  # 분이 60 넘어간다면
+#     h += 1   # 시는 1씩 추가
+#     m -= 60  # 분은 60씩 빼기
+# if h >= 24:  # 시가 24 넘어간다면
+#     h -= 24  # 시는 24씩 빼기
+
+# print(h, m)
 
 
+# a = input()
+# b = int(input())
+# print(a[b-1])
+
+# a = input()
+# print(len(a))
+
+# a = input()
+# b = input()
+# c = input()
+
+# print(a)
+# print(b)
+# print(c)
+
+
+
+# a = int(input())
+
+# for i in range(1, 10):
+#     print(a, "*", i, "=", a*i)
