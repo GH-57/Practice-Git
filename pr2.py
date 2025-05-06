@@ -180,3 +180,16 @@
 
 # for i in range(1, 10):
 #     print(a, "*", i, "=", a*i)
+
+# a = int(input())
+
+# for i in range(a):
+#     test = input()
+#     print(test[0]+test[-1])
+
+a = int(input())
+
+for i in range(a):
+    a,b = map(int,input().split())
+    print(a+b)
+
