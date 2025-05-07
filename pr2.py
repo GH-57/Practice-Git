@@ -187,9 +187,15 @@
 #     test = input()
 #     print(test[0]+test[-1])
 
-a = int(input())
+# a = int(input())
 
-for i in range(a):
-    a,b = map(int,input().split())
-    print(a+b)
+# for i in range(a):
+#     a,b = map(int,input().split())
+#     print(a+b)
 
+
+
+num = input() # 숫자의 개수
+numbers = list(map(int,input())) # 리스트로 숫자들을 입력받는다
+
+print(sum(numbers)) # list number의 합을 구한 후, 출력
