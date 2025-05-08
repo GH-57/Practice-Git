@@ -85,9 +85,11 @@ print(f"문자열 길이: {b}\n첫 글자: {a[0]}\n마지막 글자: {a[-1]}")
 '''
 
 ########### 문제 13(하드)
+# 쓰는 방법...?
 '''
 name = input().split()
 a = str(n")
+
 '''
 ############
 # 문제 14(o)
@@ -174,7 +176,7 @@ print(','.join(A))
 # a가 섭씨라면, 화씨는 (a-32)*5/9이다
 # a가 화씨라면, 섭씨는 a*9/5+32이다
 '''
-a = int(input())
+a = int(input())  ## 정수형이 아니다!
 b = input() 
 
 if b == "C":
@@ -182,6 +184,22 @@ if b == "C":
 elif b == "F":
     print(f"{a}°F는 {((a-32)*5/9)}°C입니다.")
 '''
+## 강사님 해설 (20번)
+'''
+temp = input()
+temp = float(temp)
+unit = input() # C 또는 F
+
+if unit == "C": # 섭씨라면
+    convert = temp * 9/5 + 32
+    print(f"{temp}.C는 {convert}.F입니다.")
+elif unit == "F": #화씨라면
+    convert = (temp-32) * 5/9
+    print(f"{temp}.F는 {convert}.C입니다.") 
+else:
+    print("잘못입력하였습니다")
+'''
+
 
 # 문제 21(O)
 '''
@@ -203,7 +221,7 @@ print(f"뒤 3글자: {a[-3:]}")
 print(f"거꾸로: {a[::-1]}")
 '''
 
-# 문제 23 (?) # 출력 예시가 잘못된건가...?
+# 문제 23 (?) # 출력 예시가 잘못된건가...? [if문 사용해라]
 '''
 a = input()
 b = input()
@@ -211,6 +229,19 @@ b = input()
 
 print(f"단어 '{b}'의 위치: {a.find(b)}")
 '''
+##강사님 해설(23번) [if문 사용해라]
+'''
+sentence = input() # 문장입력
+word = input() # 단어입력
+
+position = sentence.find(word) # 문장 안에서 단어를 찾는다
+
+if position != -1: # 찾았다.
+    print(f"단어 '{word}'의 위치: {position}")
+else:
+    print(f"단어 '{word}'를 찾을 수 없습니다.")
+'''    
+
 
 # 문제 24(O)
 '''
