@@ -1,5 +1,3 @@
-
-
 # # y, m, d = input().split('.')gh
 
 # # print(d,m,y, sep="-")
@@ -25,9 +23,22 @@
 # b = float(input())
 # print(a+b)
 
-a = int(input())
-b = int(input())
-a < b = True
-a >= b = False
+# a = int(input())
+# b = int(input())
+# a < b = True
+# a >= b = False
 
-print(bool(a,b))
+# print(bool(a,b))
+
+# n = input()
+
+# if n == "A":
+#     print("best!!!")
+# elif n == "B":
+#     print("good!!")
+# elif n == "C":
+#     print("run!")
+# elif n == "D":
+#     print("slowly~")
+# else:
+#     print("what?")
