@@ -42,3 +42,15 @@
 #     print("slowly~")
 # else:
 #     print("what?")
+
+# a = int(input())
+# b = int(input())
+# print(a+b)
+
+# R1, S = map(int, input().split())
+# R2 = 2 * S - R1
+# print(R2)
+
+# N, M = map(int, input().split())
+# print(N * M - 1)
+
