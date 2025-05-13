@@ -54,3 +54,29 @@
 # N, M = map(int, input().split())
 # print(N * M - 1)
 
+# T = int(input())
+
+# for i in range(1,T+1):
+#     a,b = map(int,input().split())
+#     print(f"Case #{i}: {a} + {b} = {a+b}")
+
+# a = int(input())
+# if a == 12 or a == 1 or a == 2:
+#     print("winter")
+# elif a == 3 or a == 4 or a == 5:
+#     print("spring")
+# elif a == 6 or a == 7 or a == 8:
+#     print("summer")
+# elif a == 9 or a == 10 or a == 11:
+#     print("fall")
+
+
+
+# n = int(input())
+# sum = 0
+
+# for i in range(1, n+1):
+#     sum += i
+
+# print(sum)
+
