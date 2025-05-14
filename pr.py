@@ -105,3 +105,16 @@
 
 # for i in range(1, n+1):
 #     print(" "*(n-i) + "*"*i )
+
+
+
+# def f():
+#     print('hello')
+
+# f()
+
+
+def f():
+    print('**')
+
+f()
